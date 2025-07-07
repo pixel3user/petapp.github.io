@@ -25,7 +25,14 @@ def generate_qa(client, image_path, label):
     contents = [
         types.Content(
             role="user",
-            parts=[types.Part.from_data(mime_type="image/jpeg", data=data)],
+            parts=[
+                types.Part(
+                    inline_data=genai.types.Blob(
+                        mime_type="image/jpeg",
+                        data=data,
+                    )
+                )
+            ],
         ),
     ]
 
