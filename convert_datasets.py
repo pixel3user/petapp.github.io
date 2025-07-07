@@ -94,7 +94,7 @@ def generate_qa(client, image_path, label):
     raise RuntimeError("Failed to generate QA after retries")
 
 
-def collect_records(client, dataset_path, checkpoint_file):
+def collect_records(client, dataset_path, checkpoint_file, max_records=None):
     records = []
     processed = set()
     if os.path.exists(checkpoint_file):
@@ -104,6 +104,8 @@ def collect_records(client, dataset_path, checkpoint_file):
                     rec = json.loads(line)
                     records.append(rec)
                     processed.add(rec.get("image"))
+                    if max_records and len(records) >= max_records:
+                        return records
 
     parent = os.path.dirname(dataset_path)
     for root, _, files in os.walk(dataset_path):
@@ -114,6 +116,9 @@ def collect_records(client, dataset_path, checkpoint_file):
                 rel = os.path.relpath(img_path, parent).replace(os.sep, "/")
                 if rel in processed:
                     continue
+                if max_records and len(records) >= max_records:
+                    return records
+    
                 question, answer = generate_qa(client, img_path, label)
                 rec = {
                     "image": rel,
@@ -148,6 +153,12 @@ def main():
         default=".checkpoints",
         help="Directory to store intermediate records",
     )
+    parser.add_argument(
+        "--max-images",
+        type=int,
+        default=0,
+        help="Maximum total images to process. 0 means no limit",
+    )
     args = parser.parse_args()
 
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -160,13 +171,28 @@ def main():
     cp_dir = os.path.join(args.output, args.checkpoint_dir)
     os.makedirs(cp_dir, exist_ok=True)
 
-    datasets = {
-        "dogs1": collect_records(client, args.dogs1, os.path.join(cp_dir, "dogs1.jsonl")),
-        "dogs2": collect_records(client, args.dogs2, os.path.join(cp_dir, "dogs2.jsonl")),
-        "cats": collect_records(client, args.cats, os.path.join(cp_dir, "cats.jsonl")),
+    paths = {
+        "dogs1": args.dogs1,
+        "dogs2": args.dogs2,
+        "cats": args.cats,
     }
 
+    per_limit = None
+    if args.max_images:
+        per_limit = max(1, args.max_images // len(paths))
+
+    datasets = {}
+    for name, path in paths.items():
+        datasets[name] = collect_records(
+            client,
+            path,
+            os.path.join(cp_dir, f"{name}.jsonl"),
+            max_records=per_limit,
+        )
+
     limit = min(len(v) for v in datasets.values())
+    if args.max_images:
+        limit = min(limit, max(1, args.max_images // len(datasets)))
     train, val = [], []
     for recs in datasets.values():
         random.shuffle(recs)
