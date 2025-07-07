@@ -118,6 +118,7 @@ def collect_records(client, dataset_path, checkpoint_file, max_records=None):
                     continue
                 if max_records and len(records) >= max_records:
                     return records
+    
                 question, answer = generate_qa(client, img_path, label)
                 rec = {
                     "image": rel,
