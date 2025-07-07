@@ -1,6 +1,8 @@
 # Dataset Conversion
 
 `convert_datasets.py` generates conversation data for image datasets using the Gemini Flash API.
+The script respects the API rate limit by issuing at most 12 requests per minute
+and stores progress in checkpoint files so interrupted runs can be resumed.
 
 ## Requirements
 
@@ -25,8 +27,15 @@ Run the converter:
 python convert_datasets.py --dogs1 /path/to/dogs1 \
                            --dogs2 /path/to/dogs2 \
                            --cats  /path/to/cats \
-                           --out data/qwen25-dataset
+                           --out data/qwen25-dataset \
+                           --max-images 100
 ```
+
+Checkpoint files are stored in `--out/.checkpoints`. Rerun the command to
+resume generation if it stops.
+
+Use `--max-images N` to limit dataset creation to at most `N` images across all
+datasets. Omit the flag to process every image.
 
 The script mixes and shuffles the examples from all datasets, then writes
 `train.jsonl` and `val.jsonl` to the output directory.
