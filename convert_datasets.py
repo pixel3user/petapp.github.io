@@ -2,6 +2,7 @@ import argparse
 import os
 import random
 import json
+import time
 
 from google import genai
 from google.genai import types
@@ -9,15 +10,22 @@ from google.genai import types
 
 MODEL_NAME = "gemini-2.0-flash"
 
+RATE_LIMIT_PER_MIN = 12
+_CALL_INTERVAL = 60.0 / RATE_LIMIT_PER_MIN
+_last_call_time = 0.0
+MAX_RETRIES = 3
+
 
 def generate_qa(client, image_path, label):
+    global _last_call_time
+
     with open(image_path, "rb") as f:
         data = f.read()
 
     contents = [
         types.Content(
             role="user",
-            parts=[types.Part.from_data(mime_type="image/jpeg", data=data)],
+            parts=[types.Part.from_bytes(mime_type="image/jpeg", data=data)],
         ),
     ]
 
@@ -45,46 +53,89 @@ def generate_qa(client, image_path, label):
         system_instruction=[types.Part.from_text(text=system_instruction)],
     )
 
-    response = client.models.generate_content(
-        model=MODEL_NAME,
-        contents=contents,
-        config=gen_config,
-    )
+    for attempt in range(MAX_RETRIES):
+        wait = _last_call_time + _CALL_INTERVAL - time.time()
+        if wait > 0:
+            time.sleep(wait)
+        start = time.time()
+        try:
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=contents,
+                config=gen_config,
+            )
+        except Exception:
+            _last_call_time = start
+            if attempt == MAX_RETRIES - 1:
+                raise
+            time.sleep(min(30, 2 ** attempt))
+            continue
+        _last_call_time = start
+        text = getattr(response, "text", None)
+        if text is None and hasattr(response, "candidates"):
+            text = response.candidates[0].text
+        if text is None:
+            text = ""
+        text = text.strip()
 
-    text = getattr(response, "text", None)
-    if text is None and hasattr(response, "candidates"):
-        text = response.candidates[0].text
-    if text is None:
-        text = ""
-    text = text.strip()
+        try:
+            data = json.loads(text)
+            q = data.get("question", "").strip()
+            a = data.get("answer", "").strip()
+            if not q or not a:
+                raise ValueError("empty response")
+            return q, a
+        except Exception:
+            if attempt == MAX_RETRIES - 1:
+                raise
+            time.sleep(min(30, 2 ** attempt))
+            continue
 
-    try:
-        data = json.loads(text)
-        return data.get("question", "").strip(), data.get("answer", "").strip()
-    except Exception:
-        lines = text.strip().splitlines()
-        question = lines[0] if lines else ""
-        answer = " ".join(lines[1:]) if len(lines) > 1 else ""
-        return question.strip(), answer.strip()
+    raise RuntimeError("Failed to generate QA after retries")
 
 
-def collect_records(client, dataset_path):
+def collect_records(client, dataset_path, checkpoint_file, max_records=None):
     records = []
+    processed = set()
     parent = os.path.dirname(dataset_path)
+    if os.path.exists(checkpoint_file):
+        with open(checkpoint_file) as f:
+            for line in f:
+                if line.strip():
+                    rec = json.loads(line)
+                    img = rec.get("image")
+                    if img:
+                        if not os.path.isabs(img):
+                            img = os.path.abspath(os.path.join(parent, img))
+                        img = img.replace(os.sep, "/")
+                        rec["image"] = img
+                        processed.add(img)
+                    records.append(rec)
+                    if max_records and len(records) >= max_records:
+                        return records
+
     for root, _, files in os.walk(dataset_path):
         label = os.path.basename(root)
         for name in files:
             if name.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
                 img_path = os.path.join(root, name)
-                rel = os.path.relpath(img_path, parent).replace(os.sep, "/")
+                abs_path = os.path.abspath(img_path).replace(os.sep, "/")
+                if abs_path in processed:
+                    continue
+                if max_records and len(records) >= max_records:
+                    return records
                 question, answer = generate_qa(client, img_path, label)
-                records.append({
-                    "image": rel,
+                rec = {
+                    "image": abs_path,
                     "conversations": [
                         {"from": "human", "value": question},
                         {"from": "gpt", "value": answer},
                     ],
-                })
+                }
+                records.append(rec)
+                with open(checkpoint_file, "a") as cp:
+                    json.dump(rec, cp)
+                    cp.write("\n")
     return records
 
 
@@ -102,6 +153,17 @@ def main():
     )
     parser.add_argument("--val-ratio", type=float, default=0.2, help="Validation split ratio")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--checkpoint-dir",
+        default=".checkpoints",
+        help="Directory to store intermediate records",
+    )
+    parser.add_argument(
+        "--max-images",
+        type=int,
+        default=0,
+        help="Maximum total images to process. 0 means no limit",
+    )
     args = parser.parse_args()
 
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -111,13 +173,31 @@ def main():
 
     random.seed(args.seed)
 
-    datasets = {
-        "dogs1": collect_records(client, args.dogs1),
-        "dogs2": collect_records(client, args.dogs2),
-        "cats": collect_records(client, args.cats),
+    cp_dir = os.path.join(args.output, args.checkpoint_dir)
+    os.makedirs(cp_dir, exist_ok=True)
+
+    paths = {
+        "dogs1": args.dogs1,
+        "dogs2": args.dogs2,
+        "cats": args.cats,
     }
 
+    per_limit = None
+    if args.max_images:
+        per_limit = max(1, args.max_images // len(paths))
+
+    datasets = {}
+    for name, path in paths.items():
+        datasets[name] = collect_records(
+            client,
+            path,
+            os.path.join(cp_dir, f"{name}.jsonl"),
+            max_records=per_limit,
+        )
+
     limit = min(len(v) for v in datasets.values())
+    if args.max_images:
+        limit = min(limit, max(1, args.max_images // len(datasets)))
     train, val = [], []
     for recs in datasets.values():
         random.shuffle(recs)
