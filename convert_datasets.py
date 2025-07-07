@@ -53,7 +53,13 @@ def main():
     parser.add_argument("--dogs1", required=True, help="Path to first dog dataset")
     parser.add_argument("--dogs2", required=True, help="Path to second dog dataset")
     parser.add_argument("--cats", required=True, help="Path to cat dataset")
-    parser.add_argument("--output", default=".", help="Output directory")
+    parser.add_argument(
+        "--out",
+        "--output",
+        dest="output",
+        default=".",
+        help="Output directory",
+    )
     parser.add_argument("--val-ratio", type=float, default=0.2, help="Validation split ratio")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()

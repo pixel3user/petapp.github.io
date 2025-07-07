@@ -25,7 +25,7 @@ Run the converter:
 python convert_datasets.py --dogs1 /path/to/dogs1 \
                            --dogs2 /path/to/dogs2 \
                            --cats  /path/to/cats \
-                           --output ./output
+                           --out data/qwen25-dataset
 ```
 
 The script mixes and shuffles the examples from all datasets, then writes
