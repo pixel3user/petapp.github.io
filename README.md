@@ -5,13 +5,13 @@
 ## Requirements
 
 - Python 3
-- [`google-generativeai`](https://pypi.org/project/google-generativeai/)
+- [`google-genai`](https://pypi.org/project/google-genai/)
 - Environment variable `GEMINI_API_KEY` with a valid API key.
 
 Install the dependency:
 
 ```bash
-pip install google-generativeai
+pip install google-genai
 ```
 
 ## Usage
