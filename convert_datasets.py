@@ -22,19 +22,21 @@ def generate_qa(client, image_path, label):
     ]
 
     system_instruction = (
-        "You are a synthetic dataset generation model which output two text results, question and answer.\n"
-        "For generating the question follow these steps :- Analyse the image and write about the activity of the animal, and query about if there are anything wrong with the animal here. remember to act like the owner of the animal, and detect the type of the animal. (you have to act as a synthetic prompt generation model for animals activity and diseases)\n\n"
+        "You are a synthetic dataset generation model which output two text results, question and answer in the json structured format.\n"
+        "For generating the question follow these steps :- Analyse the image and write about the activity of the animal, and query about if there are anything wrong with the animal here. remember to act like the owner of the animal, and detect the type of the animal. (you have to act as a synthetic prompt generation model for animals activity and diseases) Remember to write a short question as people does in a chatbot max 100 words.\n\n"
         "For generating the answer follow these steps:- You are an assistant that writes synthetic veterinary consultation data.\n"
-        f"Condition label is {label}.\n"
-        "You should tell the user about the condition that is given above and in a well written response included the below details about the condition too. Also make sure to state that its not 100% correct and its according to and AI.\n"
-        "Also add information about\nSymptoms\nHome remedies\nPrevention\nEmergency Relief\nVet required or not\n"
-        "Respond with JSON containing 'question' and 'answer'."
+        f"        Condition label is {label}.\n"
+        "       You should tell the user about the condition that is given above and in a well written response included the below details about the condition too. Also make sure to state that its not 100% correct and its according to and AI.\n"
+        "        Also add information about \n       Symptoms\n       Home remedies \n       Prevention\n       Emergency Relief\n       Vet required or not\n\n"
+        "now return the answers in the below format:-\n{\n\"question\": <question>\n\"answer\": <answer>\n}\n\n"
+        "Please avoid adding blank lines or \\n\\n at the end of your response."
     )
 
     gen_config = types.GenerateContentConfig(
         response_mime_type="application/json",
         response_schema=genai.types.Schema(
             type=genai.types.Type.OBJECT,
+            required=["question", "answer"],
             properties={
                 "question": genai.types.Schema(type=genai.types.Type.STRING),
                 "answer": genai.types.Schema(type=genai.types.Type.STRING),
@@ -52,6 +54,9 @@ def generate_qa(client, image_path, label):
     text = getattr(response, "text", None)
     if text is None and hasattr(response, "candidates"):
         text = response.candidates[0].text
+    if text is None:
+        text = ""
+    text = text.strip()
 
     try:
         data = json.loads(text)
