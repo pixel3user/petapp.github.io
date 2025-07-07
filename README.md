@@ -38,4 +38,5 @@ Use `--max-images N` to limit dataset creation to at most `N` images across all
 datasets. Omit the flag to process every image.
 
 The script mixes and shuffles the examples from all datasets, then writes
-`train.jsonl` and `val.jsonl` to the output directory.
+`train.jsonl` and `val.jsonl` to the output directory. Each record includes the
+absolute path to the image file.

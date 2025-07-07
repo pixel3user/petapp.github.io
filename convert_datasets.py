@@ -104,31 +104,36 @@ def generate_qa(client, image_path, label):
 def collect_records(client, dataset_path, checkpoint_file, max_records=None):
     records = []
     processed = set()
+    parent = os.path.dirname(dataset_path)
     if os.path.exists(checkpoint_file):
         with open(checkpoint_file) as f:
             for line in f:
                 if line.strip():
                     rec = json.loads(line)
+                    img = rec.get("image")
+                    if img:
+                        if not os.path.isabs(img):
+                            img = os.path.abspath(os.path.join(parent, img))
+                        img = img.replace(os.sep, "/")
+                        rec["image"] = img
+                        processed.add(img)
                     records.append(rec)
-                    processed.add(rec.get("image"))
                     if max_records and len(records) >= max_records:
                         return records
 
-    parent = os.path.dirname(dataset_path)
     for root, _, files in os.walk(dataset_path):
         label = os.path.basename(root)
         for name in files:
             if name.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
                 img_path = os.path.join(root, name)
-                rel = os.path.relpath(img_path, parent).replace(os.sep, "/")
-                if rel in processed:
+                abs_path = os.path.abspath(img_path).replace(os.sep, "/")
+                if abs_path in processed:
                     continue
                 if max_records and len(records) >= max_records:
                     return records
-    
                 question, answer = generate_qa(client, img_path, label)
                 rec = {
-                    "image": rel,
+                    "image": abs_path,
                     "conversations": [
                         {"from": "human", "value": question},
                         {"from": "gpt", "value": answer},
