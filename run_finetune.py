@@ -17,6 +17,11 @@ from transformers import (
 )
 from peft import LoraConfig, get_peft_model
 
+def upscale_if_needed(image, min_size=672):
+    width, height = image.size
+    if width < min_size or height < min_size:
+        image = image.resize((min_size, min_size), Image.BICUBIC)
+    return image
 
 def load_jsonl(path: str) -> List[dict]:
     records = []
@@ -37,10 +42,14 @@ class QwenJsonlDataset(Dataset):
         return len(self.records)
 
     def __getitem__(self, idx: int):
-        for _ in range(len(self.records)):  # attempt up to N records before failing
+        max_attempts = len(self.records)
+        orig_idx = idx
+
+        for attempt in range(max_attempts):
             rec = self.records[idx]
+
             try:
-                # Validate conversation structure
+                # ✅ Validate conversation structure
                 if "conversations" not in rec or len(rec["conversations"]) < 2:
                     raise ValueError("Missing conversation data")
 
@@ -52,10 +61,12 @@ class QwenJsonlDataset(Dataset):
                     raise FileNotFoundError(f"Image not found: {image_path}")
 
                 image = Image.open(image_path).convert("RGB")
+                image = upscale_if_needed(image)  # 🔧 Your custom function to ensure min size
 
                 data = self.processor(
                     text="<image>\n" + question,
                     images=image,
+                    size={"shortest_edge": 672, "longest_edge": 672},  # Required by Qwen2.5-VL
                     do_resize=True,
                     padding=False,
                     return_tensors="pt",
@@ -63,11 +74,16 @@ class QwenJsonlDataset(Dataset):
 
                 prompt_ids = data["input_ids"][0]
                 pixel_values = data["pixel_values"][0]
-                grid = data["image_grid_thw"][0]
 
-                if pixel_values.shape[1] == 0 or grid.numel() == 0:
-                    raise ValueError("Invalid patch grid")
+                # 🔍 Get and validate image grid
+                grid_data = data.get("image_grid_thw")
+                if grid_data is None or not isinstance(grid_data, torch.Tensor):
+                    raise ValueError("Missing or invalid 'image_grid_thw'")
+                grid = grid_data[0]
+                if pixel_values.ndim < 4 or pixel_values.shape[1] == 0 or grid.numel() == 0:
+                    raise ValueError(f"Invalid image tensor or patch grid. Shape: {pixel_values.shape}, Grid: {grid}")
 
+                # 🔡 Tokenize answer
                 ans_ids = self.processor.tokenizer(
                     answer, add_special_tokens=False, return_tensors="pt"
                 )["input_ids"][0]
@@ -83,11 +99,11 @@ class QwenJsonlDataset(Dataset):
                 }
 
             except Exception as e:
-                print(f"[WARN] Skipping idx={idx}: {e}")
-                idx = (idx + 1) % len(self)
+                print(f"[WARN] Skipping idx={idx}: {type(e).__name__}: {e}")
+                idx = (idx + 1) % len(self.records)
 
-        # If we fail N times in a row, crash
-        raise RuntimeError("All data records are invalid.")
+        raise RuntimeError(f"All data records are invalid. Failed starting at idx={orig_idx}.")
+
 
 
 def collate_fn(processor):
@@ -143,7 +159,10 @@ def main():
     train_records = load_jsonl(train_file)
     val_records = load_jsonl(val_file)
 
-    processor = AutoProcessor.from_pretrained(args.model)
+    min_pixels = 256*28*28
+    max_pixels = 1280*28*28
+
+    processor = AutoProcessor.from_pretrained(args.model, min_pixels=min_pixels, max_pixels=max_pixels)
 
     train_ds = QwenJsonlDataset(train_records, processor)
     val_ds = QwenJsonlDataset(val_records, processor)
