@@ -80,8 +80,12 @@ class QwenJsonlDataset(Dataset):
                 if grid_data is None or not isinstance(grid_data, torch.Tensor):
                     raise ValueError("Missing or invalid 'image_grid_thw'")
                 grid = grid_data[0]
-                if pixel_values.ndim < 4 or pixel_values.shape[1] == 0 or grid.numel() == 0:
-                    raise ValueError(f"Invalid image tensor or patch grid. Shape: {pixel_values.shape}, Grid: {grid}")
+                # pixel_values is returned without a batch dimension: [3, H, W]
+                # Validate the 3 channel dimension and ensure grid info is present
+                if pixel_values.ndim != 3 or pixel_values.shape[0] != 3 or grid.numel() == 0:
+                    raise ValueError(
+                        f"Invalid image tensor or patch grid. Shape: {pixel_values.shape}, Grid: {grid}"
+                    )
 
                 # 🔡 Tokenize answer
                 ans_ids = self.processor.tokenizer(
