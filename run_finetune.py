@@ -37,47 +37,57 @@ class QwenJsonlDataset(Dataset):
         return len(self.records)
 
     def __getitem__(self, idx: int):
-        rec = self.records[idx]
-        question = rec["conversations"][0]["value"]
-        answer = rec["conversations"][1]["value"]
-        image_path = rec["image"]
+        for _ in range(len(self.records)):  # attempt up to N records before failing
+            rec = self.records[idx]
+            try:
+                # Validate conversation structure
+                if "conversations" not in rec or len(rec["conversations"]) < 2:
+                    raise ValueError("Missing conversation data")
 
-        try:
-            if not os.path.exists(image_path):
-                raise IndexError(f"Image not found: {image_path}")
+                question = rec["conversations"][0]["value"]
+                answer = rec["conversations"][1]["value"]
 
-            # ✅ Load image from file path
-            image = Image.open(image_path).convert("RGB")
+                image_path = rec["image"]
+                if not os.path.exists(image_path):
+                    raise FileNotFoundError(f"Image not found: {image_path}")
 
-            data = self.processor(
-                text="<image>\n" + question,
-                images=image,
-                padding=False,
-                do_resize=False,
-                return_tensors="pt",
-            )
-            prompt_ids = data["input_ids"][0]
-            pixel_values = data["pixel_values"][0]
-            grid = data["image_grid_thw"][0]
+                image = Image.open(image_path).convert("RGB")
 
-            ans_ids = self.processor.tokenizer(
-                answer, add_special_tokens=False, return_tensors="pt"
-            )["input_ids"][0]
+                data = self.processor(
+                    text="<image>\n" + question,
+                    images=image,
+                    do_resize=True,
+                    padding=False,
+                    return_tensors="pt",
+                )
 
-            input_ids = torch.cat([prompt_ids, ans_ids], dim=0)
-            labels = torch.cat([torch.full_like(prompt_ids, -100), ans_ids], dim=0)
+                prompt_ids = data["input_ids"][0]
+                pixel_values = data["pixel_values"][0]
+                grid = data["image_grid_thw"][0]
 
-            return {
-                "input_ids": input_ids,
-                "labels": labels,
-                "pixel_values": pixel_values,
-                "image_grid_thw": grid,
-            }
-        
-        except (FileNotFoundError, IndexError, OSError) as e:
-            # Skip this example by recursively fetching the next one
-            print(f"[WARN] Skipping index {idx}: {e}")
-            return self.__getitem__((idx + 1) % len(self))
+                if pixel_values.shape[1] == 0 or grid.numel() == 0:
+                    raise ValueError("Invalid patch grid")
+
+                ans_ids = self.processor.tokenizer(
+                    answer, add_special_tokens=False, return_tensors="pt"
+                )["input_ids"][0]
+
+                input_ids = torch.cat([prompt_ids, ans_ids], dim=0)
+                labels = torch.cat([torch.full_like(prompt_ids, -100), ans_ids], dim=0)
+
+                return {
+                    "input_ids": input_ids,
+                    "labels": labels,
+                    "pixel_values": pixel_values,
+                    "image_grid_thw": grid,
+                }
+
+            except Exception as e:
+                print(f"[WARN] Skipping idx={idx}: {e}")
+                idx = (idx + 1) % len(self)
+
+        # If we fail N times in a row, crash
+        raise RuntimeError("All data records are invalid.")
 
 
 def collate_fn(processor):
