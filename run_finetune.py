@@ -7,6 +7,7 @@ from typing import List
 import torch
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import Dataset
+from PIL import Image
 
 from transformers import (
     AutoProcessor,
@@ -39,32 +40,44 @@ class QwenJsonlDataset(Dataset):
         rec = self.records[idx]
         question = rec["conversations"][0]["value"]
         answer = rec["conversations"][1]["value"]
-        image = rec["image"]
+        image_path = rec["image"]
 
-        data = self.processor(
-            text="<image>\n" + question,
-            images=image,
-            padding=False,
-            do_resize=False,
-            return_tensors="pt",
-        )
-        prompt_ids = data["input_ids"][0]
-        pixel_values = data["pixel_values"][0]
-        grid = data["image_grid_thw"][0]
+        try:
+            if not os.path.exists(image_path):
+                raise IndexError(f"Image not found: {image_path}")
 
-        ans_ids = self.processor.tokenizer(
-            answer, add_special_tokens=False, return_tensors="pt"
-        )["input_ids"][0]
+            # ✅ Load image from file path
+            image = Image.open(image_path).convert("RGB")
 
-        input_ids = torch.cat([prompt_ids, ans_ids], dim=0)
-        labels = torch.cat([torch.full_like(prompt_ids, -100), ans_ids], dim=0)
+            data = self.processor(
+                text="<image>\n" + question,
+                images=image,
+                padding=False,
+                do_resize=False,
+                return_tensors="pt",
+            )
+            prompt_ids = data["input_ids"][0]
+            pixel_values = data["pixel_values"][0]
+            grid = data["image_grid_thw"][0]
 
-        return {
-            "input_ids": input_ids,
-            "labels": labels,
-            "pixel_values": pixel_values,
-            "image_grid_thw": grid,
-        }
+            ans_ids = self.processor.tokenizer(
+                answer, add_special_tokens=False, return_tensors="pt"
+            )["input_ids"][0]
+
+            input_ids = torch.cat([prompt_ids, ans_ids], dim=0)
+            labels = torch.cat([torch.full_like(prompt_ids, -100), ans_ids], dim=0)
+
+            return {
+                "input_ids": input_ids,
+                "labels": labels,
+                "pixel_values": pixel_values,
+                "image_grid_thw": grid,
+            }
+        
+        except (FileNotFoundError, IndexError, OSError) as e:
+            # Skip this example by recursively fetching the next one
+            print(f"[WARN] Skipping index {idx}: {e}")
+            return self.__getitem__((idx + 1) % len(self))
 
 
 def collate_fn(processor):
@@ -128,6 +141,9 @@ def main():
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         args.model, torch_dtype=torch.float16
     )
+    # ✅ ADD THIS:
+    if torch.cuda.is_available():
+        model = model.to("cuda")
 
     if args.lora_rank > 0:
         target_modules = find_linear_layers(model)

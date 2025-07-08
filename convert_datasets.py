@@ -8,7 +8,7 @@ from google import genai
 from google.genai import types
 
 
-MODEL_NAME = "gemini-2.0-flash"
+MODEL_NAME = "gemini-2.5-flash-lite-preview-06-17"
 
 RATE_LIMIT_PER_MIN = 12
 _CALL_INTERVAL = 60.0 / RATE_LIMIT_PER_MIN
@@ -72,9 +72,11 @@ def generate_qa(client, image_path, label):
             continue
         _last_call_time = start
         text = getattr(response, "text", None)
-        if text is None and hasattr(response, "candidates"):
-            text = response.candidates[0].text
         if text is None:
+            candidates = getattr(response, "candidates", None)
+            if candidates:
+                text = getattr(candidates[0], "text", None)
+        if not text:
             text = ""
         text = text.strip()
 
