@@ -1,0 +1,58 @@
+FROM nvidia/cuda:12.1-devel-ubuntu22.04
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
+ENV CUDA_HOME=/usr/local/cuda
+ENV PATH=${CUDA_HOME}/bin:${PATH}
+ENV LD_LIBRARY_PATH=${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3.10 \
+    python3.10-dev \
+    python3-pip \
+    git \
+    wget \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create symlink for python
+RUN ln -s /usr/bin/python3.10 /usr/bin/python
+
+# Install Python dependencies
+RUN pip install --upgrade pip setuptools wheel
+
+# Install PyTorch with CUDA support
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Install transformers and other ML libraries
+RUN pip install transformers==4.44.0 \
+    accelerate \
+    datasets \
+    peft \
+    bitsandbytes \
+    deepspeed \
+    liger-kernel \
+    qwen-vl-utils \
+    trl \
+    tensorboard \
+    pillow \
+    opencv-python \
+    decord
+
+# Set working directory
+WORKDIR /workspace
+
+# Create conda-like environment structure
+RUN mkdir -p /opt/conda/envs/train/bin
+RUN ln -s /usr/bin/python /opt/conda/envs/train/bin/python
+RUN ln -s /usr/bin/pip /opt/conda/envs/train/bin/pip
+
+# Create conda activation script
+RUN mkdir -p /opt/conda/etc/profile.d
+RUN echo 'export PATH="/opt/conda/envs/train/bin:$PATH"' > /opt/conda/etc/profile.d/conda.sh
+RUN echo 'export CONDA_DEFAULT_ENV=train' >> /opt/conda/etc/profile.d/conda.sh
+
+CMD ["/bin/bash"]

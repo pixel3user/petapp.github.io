@@ -1,0 +1,71 @@
+{
+  "summary": {
+    "total_samples": 40446,
+    "existing_images": 40446,
+    "missing_images": 0,
+    "urls": 0,
+    "empty_paths": 0,
+    "success_rate": 100.0
+  },
+  "train_analysis": {
+    "total": 32146,
+    "existing": 32146,
+    "missing": 0,
+    "urls": 0,
+    "empty": 0,
+    "invalid": 0,
+    "missing_paths": [],
+    "url_paths": [],
+    "empty_paths": [],
+    "invalid_paths": []
+  },
+  "val_analysis": {
+    "total": 8300,
+    "existing": 8300,
+    "missing": 0,
+    "urls": 0,
+    "empty": 0,
+    "invalid": 0,
+    "missing_paths": [],
+    "url_paths": [],
+    "empty_paths": [],
+    "invalid_paths": []
+  },
+  "path_types": {
+    "data/": 4371,
+    "downloaded_images/": 16516,
+    ".cache/": 19559
+  },
+  "dataset_analysis": {
+    "skincap": {
+      "total": 635,
+      "existing": 635,
+      "missing": 0,
+      "urls": 0
+    },
+    "ddi": {
+      "total": 656,
+      "existing": 656,
+      "missing": 0,
+      "urls": 0
+    },
+    "fitzpatrick": {
+      "total": 16536,
+      "existing": 16536,
+      "missing": 0,
+      "urls": 0
+    },
+    "scin": {
+      "total": 3060,
+      "existing": 3060,
+      "missing": 0,
+      "urls": 0
+    },
+    "dermnet": {
+      "total": 19559,
+      "existing": 19559,
+      "missing": 0,
+      "urls": 0
+    }
+  }
+}
