@@ -1,0 +1,9 @@
+disease,count,dataset
+melanocytic-nevi,119,DDI
+seborrheic-keratosis,58,DDI
+verruca-vulgaris,50,DDI
+basal-cell-carcinoma,41,DDI
+epidermal-cyst,35,DDI
+mycosis-fungoides,32,DDI
+squamous-cell-carcinoma-in-situ,28,DDI
+dermatofibroma,22,DDI

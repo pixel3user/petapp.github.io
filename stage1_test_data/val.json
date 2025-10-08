@@ -1,0 +1,3615 @@
+[
+  {
+    "image": "downloaded_images/fitzpatrick_scabies_14245.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be granuloma annulare. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "granuloma annulare"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Herpes HPV and other STDs Photos/gonorrhea-3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Herpes HPV and other STDs Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Herpes HPV and other STDs Photos"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-3960972463314087480.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_sarcoidosis_1911.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be sarcoidosis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "sarcoidosis"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_neurotic excoriations_6137.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be psoriasis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "psoriasis"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_photodermatoses_9603.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be photodermatoses. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "photodermatoses"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-3030137111535692387.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_rosacea_6223.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be paronychia. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "paronychia"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_granuloma pyogenic_7592.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be keloid. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "keloid"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_fixed eruptions_5909.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be granuloma pyogenic. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "granuloma pyogenic"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-1175775561554415872.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_scabies_14987.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be lichen planus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "lichen planus"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Urticaria Hives/angioedema-16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Urticaria Hives."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Urticaria Hives"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_epidermolysis bullosa_1537.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be epidermolysis bullosa. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "epidermolysis bullosa"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_mucinosis_14314.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be mucous cyst. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "mucous cyst"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/tinea-groin-103.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      },
+      {
+        "from": "human",
+        "value": "Should I see a doctor?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, I recommend consulting a dermatologist for proper evaluation and treatment. Early detection and treatment are important for skin conditions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-2682996779844646329.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Melanoma Skin Cancer Nevi and Moles/melanocytic-nevi-63.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Melanoma Skin Cancer Nevi and Moles."
+      },
+      {
+        "from": "human",
+        "value": "How long will it last?"
+      },
+      {
+        "from": "gpt",
+        "value": "The duration varies greatly depending on the condition and individual factors. Some conditions resolve quickly, while others may be chronic. Proper treatment can help manage symptoms."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Melanoma Skin Cancer Nevi and Moles"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_congenital nevus_1748.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be congenital nevus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "congenital nevus"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_nematode infection_7062.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be epidermolysis bullosa. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "epidermolysis bullosa"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_ehlers danlos syndrome_11261.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be rhinophyma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "rhinophyma"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Bullous Disease Photos/dermatitis-herpetiformis-22.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Bullous Disease Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Bullous Disease Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_squamous cell carcinoma_13212.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be livedo reticularis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "livedo reticularis"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_scabies_5297.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be folliculitis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "folliculitis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Bullous Disease Photos/dermatitis-herpetiformis-12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Bullous Disease Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Bullous Disease Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Nail Fungus and other Nail Disease/alopecia-areata-81.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Nail Fungus and other Nail Disease."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Nail Fungus and other Nail Disease"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Psoriasis pictures Lichen Planus and related diseases/psoriasis-palms-soles-97.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Psoriasis pictures Lichen Planus and related diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Psoriasis pictures Lichen Planus and related diseases"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_lupus erythematosus_11935.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be solid cystic basal cell carcinoma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "solid cystic basal cell carcinoma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_scleroderma_4879.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be scleroderma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "scleroderma"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-96706846239146494.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_scabies_15591.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be basal cell carcinoma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "basal cell carcinoma"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Atopic Dermatitis Photos/05Atopic02161.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Atopic Dermatitis Photos."
+      },
+      {
+        "from": "human",
+        "value": "Should I see a doctor?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, I recommend consulting a dermatologist for proper evaluation and treatment. Early detection and treatment are important for skin conditions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Atopic Dermatitis Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_hailey hailey disease_15950.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be lupus erythematosus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "lupus erythematosus"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_basal cell carcinoma_13885.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be psoriasis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "psoriasis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Herpes HPV and other STDs Photos/bowenoid-papulosis-4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Herpes HPV and other STDs Photos."
+      },
+      {
+        "from": "human",
+        "value": "Can you tell me more about this condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "This condition typically affects various age groups and is characterized by specific features. It's important to monitor for any changes and consult a healthcare provider if symptoms worsen."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Herpes HPV and other STDs Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/seborrheic-keratosis-irritated-180.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Melanoma Skin Cancer Nevi and Moles/malignant-melanoma-118.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Melanoma Skin Cancer Nevi and Moles."
+      },
+      {
+        "from": "human",
+        "value": "Can you tell me more about this condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "This condition typically affects various age groups and is characterized by specific features. It's important to monitor for any changes and consult a healthcare provider if symptoms worsen."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Melanoma Skin Cancer Nevi and Moles"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_rosacea_10004.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be sarcoidosis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "sarcoidosis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Warts Molluscum and other Viral Infections/eczema-herpeticum-36.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Warts Molluscum and other Viral Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Warts Molluscum and other Viral Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Exanthems and Drug Eruptions/viral-exanthems-76.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Exanthems and Drug Eruptions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Exanthems and Drug Eruptions"
+    }
+  },
+  {
+    "image": "data/ddidiversedermatologyimages/000231.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be verruca-vulgaris. This appears to be a benign condition. This may not require immediate medical attention."
+      }
+    ],
+    "metadata": {
+      "dataset": "skincap",
+      "morphological_features": [],
+      "disease": "verruca-vulgaris"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Scabies Lyme Disease and other Infestations and Bites/spider-bite-28.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Scabies Lyme Disease and other Infestations and Bites."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Scabies Lyme Disease and other Infestations and Bites"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Warts Molluscum and other Viral Infections/herpes-cutaneous-116.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Warts Molluscum and other Viral Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Warts Molluscum and other Viral Infections"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_seborrheic dermatitis_14991.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be pityriasis rosea. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "pityriasis rosea"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/keratoacanthoma-108.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Lupus and other Connective Tissue diseases/lupus-acute-55.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Lupus and other Connective Tissue diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Lupus and other Connective Tissue diseases"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/kerion-4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      },
+      {
+        "from": "human",
+        "value": "Will it spread?"
+      },
+      {
+        "from": "gpt",
+        "value": "The spread of this condition depends on the specific type. Some conditions can spread to other areas, while others remain localized. A dermatologist can provide specific information about your case."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_squamous cell carcinoma_13833.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be papilomatosis confluentes and reticulate. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "papilomatosis confluentes and reticulate"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/dermatofibroma-78.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_mucous cyst_6697.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be mucinosis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "mucinosis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Acne and Rosacea Photos/perioral-dermatitis-138.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      },
+      {
+        "from": "human",
+        "value": "Can you tell me more about this condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "This condition typically affects various age groups and is characterized by specific features. It's important to monitor for any changes and consult a healthcare provider if symptoms worsen."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Vascular Tumors/venous-malformations-23.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Vascular Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Vascular Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/tinea-palm-34.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/dermatofibroma-125.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/acne-cystic-128.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Eczema Photos/lichen-simplex-chronicus-90.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Eczema Photos."
+      },
+      {
+        "from": "human",
+        "value": "How long will it last?"
+      },
+      {
+        "from": "gpt",
+        "value": "The duration varies greatly depending on the condition and individual factors. Some conditions resolve quickly, while others may be chronic. Proper treatment can help manage symptoms."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Eczema Photos"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-4449187867148856065.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_epidermal nevus_12360.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be prurigo nodularis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "prurigo nodularis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/acne-open-comedo-68.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      },
+      {
+        "from": "human",
+        "value": "How long will it last?"
+      },
+      {
+        "from": "gpt",
+        "value": "The duration varies greatly depending on the condition and individual factors. Some conditions resolve quickly, while others may be chronic. Proper treatment can help manage symptoms."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Systemic Disease/granuloma-annulare-125.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Systemic Disease."
+      },
+      {
+        "from": "human",
+        "value": "Should I see a doctor?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, I recommend consulting a dermatologist for proper evaluation and treatment. Early detection and treatment are important for skin conditions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Systemic Disease"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-6982210144088943828.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/tinea-groin-129.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Nail Fungus and other Nail Disease/periungual-warts-8.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Nail Fungus and other Nail Disease."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Nail Fungus and other Nail Disease"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Eczema Photos/prurigo-nodularis-53.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Eczema Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Eczema Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_dermatomyositis_2888.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be dermatomyositis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "dermatomyositis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Warts Molluscum and other Viral Infections/molluscum-contagiosum-112.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Warts Molluscum and other Viral Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Warts Molluscum and other Viral Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Eczema Photos/eczema-nummular-195.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Eczema Photos."
+      },
+      {
+        "from": "human",
+        "value": "How long will it last?"
+      },
+      {
+        "from": "gpt",
+        "value": "The duration varies greatly depending on the condition and individual factors. Some conditions resolve quickly, while others may be chronic. Proper treatment can help manage symptoms."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Eczema Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_fordyce spots_9766.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be lentigo maligna. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "lentigo maligna"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Vasculitis Photos/schamberg-disease-20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Vasculitis Photos."
+      },
+      {
+        "from": "human",
+        "value": "What causes this condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "This condition can be caused by various factors including genetics, environmental factors, and lifestyle. A dermatologist can provide more specific information about the underlying causes."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Vasculitis Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_tungiasis_16268.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be porokeratosis actinic. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "porokeratosis actinic"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Light Diseases and Disorders of Pigmentation/colloid-milia-3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Light Diseases and Disorders of Pigmentation."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Light Diseases and Disorders of Pigmentation"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-241390359074546594.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Exanthems and Drug Eruptions/fixed-drug-eruption-20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Exanthems and Drug Eruptions."
+      },
+      {
+        "from": "human",
+        "value": "What causes this condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "This condition can be caused by various factors including genetics, environmental factors, and lifestyle. A dermatologist can provide more specific information about the underlying causes."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Exanthems and Drug Eruptions"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/acne-cystic-59.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/hidradenitis-Suppurativa-Areola-1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": "data/ddidiversedermatologyimages/000015.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be squamous-cell-carcinoma. This appears to be a benign condition. This may not require immediate medical attention."
+      }
+    ],
+    "metadata": {
+      "dataset": "skincap",
+      "morphological_features": [],
+      "disease": "squamous-cell-carcinoma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_papilomatosis confluentes and reticulate_10221.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be halo nevus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "halo nevus"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_granuloma annulare_6541.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be prurigo nodularis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "prurigo nodularis"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-4652818442712729811.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Psoriasis pictures Lichen Planus and related diseases/Psoriasis-Anus-12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Psoriasis pictures Lichen Planus and related diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Psoriasis pictures Lichen Planus and related diseases"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Vasculitis Photos/sweets-syndrome-1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Vasculitis Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Vasculitis Photos"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-6586392916817155078.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Urticaria Hives/erythema-annulare-centrifugum-11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Urticaria Hives."
+      },
+      {
+        "from": "human",
+        "value": "Is this serious?"
+      },
+      {
+        "from": "gpt",
+        "value": "While this condition may not be immediately serious, it's important to have it evaluated by a healthcare professional to rule out any concerning features."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Urticaria Hives"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Warts Molluscum and other Viral Infections/herpes-simplex-7.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Warts Molluscum and other Viral Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Warts Molluscum and other Viral Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Systemic Disease/granuloma-annulare-85.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Systemic Disease."
+      },
+      {
+        "from": "human",
+        "value": "Will it spread?"
+      },
+      {
+        "from": "gpt",
+        "value": "The spread of this condition depends on the specific type. Some conditions can spread to other areas, while others remain localized. A dermatologist can provide specific information about your case."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Systemic Disease"
+    }
+  },
+  {
+    "image": "data/ddidiversedermatologyimages/000188.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be xanthogranuloma. This appears to be a benign condition. This may not require immediate medical attention."
+      }
+    ],
+    "metadata": {
+      "dataset": "skincap",
+      "morphological_features": [],
+      "disease": "xanthogranuloma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_eczema_2813.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be eczema. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "eczema"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/squamous-cell-carcinoma-vulva-2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_allergic contact dermatitis_17026.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be tungiasis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "tungiasis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Psoriasis pictures Lichen Planus and related diseases/seborrheic-dermatitis-139.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Psoriasis pictures Lichen Planus and related diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Psoriasis pictures Lichen Planus and related diseases"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/4616539214475309081.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Atopic Dermatitis Photos/05AtopicChild101104.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Atopic Dermatitis Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Atopic Dermatitis Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Melanoma Skin Cancer Nevi and Moles/congenital-nevus-44.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Melanoma Skin Cancer Nevi and Moles."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Melanoma Skin Cancer Nevi and Moles"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Urticaria Hives/angioedema-12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Urticaria Hives."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Urticaria Hives"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Hair Loss Photos Alopecia and other Hair Diseases/alopecia-areata-1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Hair Loss Photos Alopecia and other Hair Diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Hair Loss Photos Alopecia and other Hair Diseases"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Seborrheic Keratoses and other Benign Tumors/skin-tags-polyps-84.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Eczema Photos/eczema-chronic-44.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Eczema Photos."
+      },
+      {
+        "from": "human",
+        "value": "Is this serious?"
+      },
+      {
+        "from": "gpt",
+        "value": "While this condition may not be immediately serious, it's important to have it evaluated by a healthcare professional to rule out any concerning features."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Eczema Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Herpes HPV and other STDs Photos/genital-warts-127.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Herpes HPV and other STDs Photos."
+      },
+      {
+        "from": "human",
+        "value": "Is this serious?"
+      },
+      {
+        "from": "gpt",
+        "value": "While this condition may not be immediately serious, it's important to have it evaluated by a healthcare professional to rule out any concerning features."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Herpes HPV and other STDs Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/candidiasis-mouth-14.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      },
+      {
+        "from": "human",
+        "value": "How long will it last?"
+      },
+      {
+        "from": "gpt",
+        "value": "The duration varies greatly depending on the condition and individual factors. Some conditions resolve quickly, while others may be chronic. Proper treatment can help manage symptoms."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/acne-excoriated-4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Bullous Disease Photos/pemphigus-31.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Bullous Disease Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Bullous Disease Photos"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-4178417368623761390.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/4812160518335801420.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_superficial spreading melanoma ssm_5043.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be erythema nodosum. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "erythema nodosum"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_aplasia cutis_1338.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be aplasia cutis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "aplasia cutis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Cellulitis Impetigo and other Bacterial Infections/impetigo-40.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Cellulitis Impetigo and other Bacterial Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Cellulitis Impetigo and other Bacterial Infections"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_vitiligo_2457.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be vitiligo. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "vitiligo"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_lymphangioma_1080.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be lymphangioma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "lymphangioma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_halo nevus_4226.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be halo nevus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "halo nevus"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_nevus sebaceous of jadassohn_8101.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be seborrheic keratosis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "seborrheic keratosis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Vasculitis Photos/schamberg-disease-62.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Vasculitis Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Vasculitis Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/milia-11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/basal-cell-carcinoma-pigmented-21.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      },
+      {
+        "from": "human",
+        "value": "Is this serious?"
+      },
+      {
+        "from": "gpt",
+        "value": "While this condition may not be immediately serious, it's important to have it evaluated by a healthcare professional to rule out any concerning features."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_dermatomyositis_16023.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be basal cell carcinoma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "basal cell carcinoma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_prurigo nodularis_13146.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be incontinentia pigmenti. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "incontinentia pigmenti"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/actinic-cheilitis-sq-cell-lip-26.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/3096229718305165698.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Light Diseases and Disorders of Pigmentation/sun-damaged-skin-39.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Light Diseases and Disorders of Pigmentation."
+      },
+      {
+        "from": "human",
+        "value": "How long will it last?"
+      },
+      {
+        "from": "gpt",
+        "value": "The duration varies greatly depending on the condition and individual factors. Some conditions resolve quickly, while others may be chronic. Proper treatment can help manage symptoms."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Light Diseases and Disorders of Pigmentation"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_psoriasis_8012.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be acquired autoimmune bullous diseaseherpes gestationis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "acquired autoimmune bullous diseaseherpes gestationis"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Atopic Dermatitis Photos/IchthosisIMG014-GP3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Atopic Dermatitis Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Atopic Dermatitis Photos"
+    }
+  },
+  {
+    "image": "data/ddidiversedermatologyimages/000221.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be epidermal-cyst. This appears to be a benign condition. This may not require immediate medical attention."
+      }
+    ],
+    "metadata": {
+      "dataset": "skincap",
+      "morphological_features": [],
+      "disease": "epidermal-cyst"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_porokeratosis of mibelli_11288.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be lichen planus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "lichen planus"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/rosacea-72.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_porokeratosis actinic_16981.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be neutrophilic dermatoses. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "neutrophilic dermatoses"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_mucinosis_10267.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be nematode infection. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "nematode infection"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/actinic-keratosis-horn-18.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Warts Molluscum and other Viral Infections/warts-common-78.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Warts Molluscum and other Viral Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Warts Molluscum and other Viral Infections"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_pityriasis rubra pilaris_2042.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be pityriasis rubra pilaris. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "pityriasis rubra pilaris"
+    }
+  },
+  {
+    "image": "data/ddidiversedermatologyimages/000259.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be seborrheic-keratosis-irritated. This appears to be a benign condition. This may not require immediate medical attention."
+      }
+    ],
+    "metadata": {
+      "dataset": "skincap",
+      "morphological_features": [],
+      "disease": "seborrheic-keratosis-irritated"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/ctcl-113.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/intertrigo-23.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      },
+      {
+        "from": "human",
+        "value": "Should I see a doctor?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, I recommend consulting a dermatologist for proper evaluation and treatment. Early detection and treatment are important for skin conditions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Vascular Tumors/cherry-angioma-8.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Vascular Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Vascular Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/nevus-sebaceous-22.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      },
+      {
+        "from": "human",
+        "value": "Is this serious?"
+      },
+      {
+        "from": "gpt",
+        "value": "While this condition may not be immediately serious, it's important to have it evaluated by a healthcare professional to rule out any concerning features."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Exanthems and Drug Eruptions/hand-foot-mouth-disease-2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Exanthems and Drug Eruptions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Exanthems and Drug Eruptions"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_dariers disease_2943.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be dariers disease. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "dariers disease"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_allergic contact dermatitis_8454.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be granuloma annulare. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "granuloma annulare"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-2542044629932166681.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Vascular Tumors/hemangioma-infancy-47.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Vascular Tumors."
+      },
+      {
+        "from": "human",
+        "value": "Should I see a doctor?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, I recommend consulting a dermatologist for proper evaluation and treatment. Early detection and treatment are important for skin conditions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Vascular Tumors"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_actinic keratosis_12078.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be epidermolysis bullosa. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "epidermolysis bullosa"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_acne vulgaris_2949.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be acne vulgaris. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "acne vulgaris"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Psoriasis pictures Lichen Planus and related diseases/pityriasis-rosea-21.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Psoriasis pictures Lichen Planus and related diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Psoriasis pictures Lichen Planus and related diseases"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Warts Molluscum and other Viral Infections/orf-4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Warts Molluscum and other Viral Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Warts Molluscum and other Viral Infections"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_basal cell carcinoma morpheiform_8905.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be actinic keratosis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "actinic keratosis"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_nematode infection_14170.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be nematode infection. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "nematode infection"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_nematode infection_13944.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be milia. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "milia"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_basal cell carcinoma_14904.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be juvenile xanthogranuloma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "juvenile xanthogranuloma"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Atopic Dermatitis Photos/5IMG006.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Atopic Dermatitis Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Atopic Dermatitis Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_perioral dermatitis_9114.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be seborrheic dermatitis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "seborrheic dermatitis"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-5587762910680104171.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_myiasis_13556.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be vitiligo. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "vitiligo"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Psoriasis pictures Lichen Planus and related diseases/lichen-planus-196.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Psoriasis pictures Lichen Planus and related diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Psoriasis pictures Lichen Planus and related diseases"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-4986256408299251030.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Nail Fungus and other Nail Disease/congenital-anomalies-8.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Nail Fungus and other Nail Disease."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Nail Fungus and other Nail Disease"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Systemic Disease/granuloma-annulare-198.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Systemic Disease."
+      },
+      {
+        "from": "human",
+        "value": "Should I see a doctor?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, I recommend consulting a dermatologist for proper evaluation and treatment. Early detection and treatment are important for skin conditions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Systemic Disease"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/dermatofibroma-12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/actinic-cheilitis-sq-cell-lip-29.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      },
+      {
+        "from": "human",
+        "value": "Can you tell me more about this condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "This condition typically affects various age groups and is characterized by specific features. It's important to monitor for any changes and consult a healthcare provider if symptoms worsen."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/seborrheic-keratoses-ruff-110.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Atopic Dermatitis Photos/03EczemaAreolae1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Atopic Dermatitis Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Atopic Dermatitis Photos"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_allergic contact dermatitis_1351.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be allergic contact dermatitis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "allergic contact dermatitis"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_scabies_14856.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be basal cell carcinoma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "basal cell carcinoma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_acne vulgaris_9118.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be hailey hailey disease. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "hailey hailey disease"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_psoriasis_12635.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be porokeratosis actinic. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "porokeratosis actinic"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-2700690042647203205.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_porphyria_4625.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be porphyria. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "porphyria"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_naevus comedonicus_4712.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be naevus comedonicus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "naevus comedonicus"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-4146328673349177641.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_syringoma_15087.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be squamous cell carcinoma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "squamous cell carcinoma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_tungiasis_13714.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be scleroderma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "scleroderma"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_neutrophilic dermatoses_8896.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be epidermal nevus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "epidermal nevus"
+    }
+  },
+  {
+    "image": "data/ddidiversedermatologyimages/000279.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. It's been there for a while. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be melanocytic-nevi. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "ddi",
+      "disease": "melanocytic-nevi"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Psoriasis pictures Lichen Planus and related diseases/Psoriasis-Guttate-89.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Psoriasis pictures Lichen Planus and related diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Psoriasis pictures Lichen Planus and related diseases"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/tinea-scalp-19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/basal-cell-carcinoma-face-26.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_photodermatoses_5027.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be photodermatoses. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "photodermatoses"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/5247638019728047423.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/granulation-tissue-3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/basal-cell-carcinoma-scalp-3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Tinea Ringworm Candidiasis and other Fungal Infections/tinea-beard-4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_pityriasis lichenoides chronica_17064.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be sarcoidosis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "sarcoidosis"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-6009971089093999930.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-4521925482868333629.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_photodermatoses_6120.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be telangiectases. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "telangiectases"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/keratoacanthoma-138.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_erythema nodosum_12056.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be epidermolysis bullosa. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "epidermolysis bullosa"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/7792307889239748212.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_juvenile xanthogranuloma_3847.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be juvenile xanthogranuloma. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "juvenile xanthogranuloma"
+    }
+  },
+  {
+    "image": "data/scin/dataset/images/-4094520090641491091.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image and your description, this appears to be condition. Here's what I can observe: **Assessment:** This appears to be a benign condition. While this may not require immediate medical attention, I recommend consulting a dermatologist for proper evaluation and treatment."
+      }
+    ],
+    "metadata": {
+      "dataset": "scin",
+      "disease": "condition"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_behcets disease_4481.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be behcets disease. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "behcets disease"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_sarcoidosis_3077.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be sarcoidosis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "sarcoidosis"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_tungiasis_5822.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be allergic contact dermatitis. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "allergic contact dermatitis"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_folliculitis_5643.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be stasis edema. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "stasis edema"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Bullous Disease Photos/dermatitis-herpetiformis-47.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Bullous Disease Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Bullous Disease Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions/basal-cell-carcinoma-lesion-20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions."
+      },
+      {
+        "from": "human",
+        "value": "Can you tell me more about this condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "This condition typically affects various age groups and is characterized by specific features. It's important to monitor for any changes and consult a healthcare provider if symptoms worsen."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Seborrheic Keratoses and other Benign Tumors/porokeratosis-6.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Seborrheic Keratoses and other Benign Tumors."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Seborrheic Keratoses and other Benign Tumors"
+    }
+  },
+  {
+    "image": "downloaded_images/fitzpatrick_scabies_16471.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> I have this skin condition. What could this be?"
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the image, this appears to be lupus erythematosus. This is classified as a condition (). This appears to be a benign condition."
+      }
+    ],
+    "metadata": {
+      "dataset": "fitzpatrick",
+      "disease": "lupus erythematosus"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Tinea Ringworm Candidiasis and other Fungal Infections/tinea-foot-plantar-30.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Tinea Ringworm Candidiasis and other Fungal Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Tinea Ringworm Candidiasis and other Fungal Infections"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Atopic Dermatitis Photos/KeratosisIMG002-GP3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Atopic Dermatitis Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Atopic Dermatitis Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/test/Psoriasis pictures Lichen Planus and related diseases/08SebDermPrestern.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Psoriasis pictures Lichen Planus and related diseases."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Psoriasis pictures Lichen Planus and related diseases"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Acne and Rosacea Photos/perioral-dermatitis-49.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Acne and Rosacea Photos."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Acne and Rosacea Photos"
+    }
+  },
+  {
+    "image": ".cache/kagglehub/datasets/shubhamgoel27/dermnet/versions/1/train/Warts Molluscum and other Viral Infections/herpes-type-1-recurrent-40.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image> What skin condition is shown in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "This image shows Warts Molluscum and other Viral Infections."
+      }
+    ],
+    "metadata": {
+      "dataset": "dermnet",
+      "disease": "Warts Molluscum and other Viral Infections"
+    }
+  }
+]
