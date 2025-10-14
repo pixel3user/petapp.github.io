@@ -13,22 +13,23 @@ CONTAINER_NAME="qwen2vl_3b_test_training"
 HOST_WORKSPACE="/teamspace/studios/this_studio"
 DOCKER_WORKSPACE="/workspace"
 
-# Model and training configuration - 3B MODEL
+# Model and training configuration - 3B MODEL OPTIMIZED FOR A100
 MODEL_NAME="Qwen/Qwen2.5-VL-3B-Instruct"
-BATCH_PER_DEVICE=32  # Can use larger batch size with 3B model
-GRAD_ACCUM_STEPS=4
+BATCH_PER_DEVICE=16   # Conservative for 3B model on A100
+GRAD_ACCUM_STEPS=8    # Higher accumulation for stable training
 NUM_EPOCHS=1
 OUTPUT_DIR="output/test_3b_dermatology_qwen2vl"
 
 echo "Configuration:"
 echo "  Model: $MODEL_NAME (3B parameters - 2-3x faster than 7B)"
-echo "  Batch per device: $BATCH_PER_DEVICE"
+echo "  Batch per device: $BATCH_PER_DEVICE (conservative for 3B model)"
 echo "  Gradient accumulation steps: $GRAD_ACCUM_STEPS"
 echo "  Training epochs: $NUM_EPOCHS"
 echo "  Output directory: $OUTPUT_DIR"
 echo "  Dataset: 1000 training examples, 200 validation examples"
-echo "  Expected time: 15-30 minutes (vs 10-15 hours for 7B)"
-echo "  Expected VRAM: 15-25GB (vs 35-45GB for 7B)"
+echo "  Expected time: 10-15 minutes (3B model on A100)"
+echo "  Expected VRAM: 20-30GB (comfortable fit on A100 80GB)"
+echo "  GPU: A100 80GB (efficient utilization)"
 echo ""
 
 # Check if Docker is running
@@ -59,7 +60,7 @@ echo "Docker workspace: $DOCKER_WORKSPACE"
 echo ""
 
 # Run the Docker container with GPU support and volume mounting
-docker run --gpus all -i \
+docker run --gpus all \
     --name $CONTAINER_NAME \
     --ipc=host \
     -v "$HOST_WORKSPACE:$DOCKER_WORKSPACE" \
@@ -96,7 +97,7 @@ docker run --gpus all -i \
         echo '  Dataset: 1000 examples'
         echo ''
         
-        # Use the repository's LoRA fine-tuning script with test data
+        # Use the repository's LoRA fine-tuning script with conservative A100 settings
         deepspeed src/train/train_sft.py \
             --use_liger True \
             --lora_enable True \
@@ -122,7 +123,7 @@ docker run --gpus all -i \
             --num_train_epochs $NUM_EPOCHS \
             --per_device_train_batch_size $BATCH_PER_DEVICE \
             --gradient_accumulation_steps $GRAD_ACCUM_STEPS \
-            --image_min_pixels \$((224 * 28 * 28)) \
+            --image_min_pixels \$((256 * 28 * 28)) \
             --image_max_pixels \$((896 * 28 * 28)) \
             --learning_rate 1e-4 \
             --merger_lr 1e-5 \
@@ -147,6 +148,125 @@ docker run --gpus all -i \
         echo ''
         echo '=== TEST Training completed ==='
         echo 'Model saved to: $OUTPUT_DIR'
+        
+        # Merge LoRA weights with base model for Hugging Face upload
+        echo ''
+        echo '=== Merging LoRA weights with base model ==='
+        echo 'This will create a full model that can be uploaded to Hugging Face...'
+        
+        # Create merged model directory
+        MERGED_MODEL_DIR=\"../output/merged_3b_dermatology_model\"
+        mkdir -p \$MERGED_MODEL_DIR
+        
+        # Use the repository's merge script
+        python src/merge_lora_weights.py \
+            --model-path ../$OUTPUT_DIR \
+            --model-base $MODEL_NAME \
+            --save-model-path \$MERGED_MODEL_DIR \
+            --safe-serialization
+        
+        echo ''
+        echo '=== Model merging completed ==='
+        echo 'Merged model saved to: \$MERGED_MODEL_DIR'
+        echo 'This model is ready for Hugging Face upload!'
+        
+        # Create model card for Hugging Face
+        echo ''
+        echo '=== Creating model card ==='
+        cat > \$MERGED_MODEL_DIR/README.md << 'EOF'
+# Qwen2.5-VL-3B Dermatology Model
+
+This is a fine-tuned version of Qwen2.5-VL-3B-Instruct specifically trained for dermatology image analysis and diagnosis.
+
+## Model Details
+
+- **Base Model**: Qwen2.5-VL-3B-Instruct
+- **Training Method**: LoRA (Low-Rank Adaptation)
+- **Domain**: Dermatology
+- **Training Data**: 1,000 dermatology images with conversations
+- **Validation Data**: 200 dermatology images
+
+## Training Configuration
+
+- **LoRA Rank**: 64
+- **LoRA Alpha**: 64
+- **LoRA Dropout**: 0.05
+- **Learning Rate**: 1e-4
+- **Batch Size**: 16
+- **Epochs**: 1
+- **Gradient Accumulation**: 8
+- **GPU**: A100 80GB (efficient utilization)
+
+## Usage
+
+```python
+from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
+from PIL import Image
+
+# Load the model
+model = Qwen2_5_VLForConditionalGeneration.from_pretrained(\"./merged_3b_dermatology_model\")
+processor = AutoProcessor.from_pretrained(\"./merged_3b_dermatology_model\")
+
+# Load and process image
+image = Image.open(\"path_to_dermatology_image.jpg\")
+inputs = processor(
+    text=\"<image>\\nWhat skin condition is shown in this image?\",
+    images=image,
+    return_tensors=\"pt\"
+)
+
+# Generate response
+outputs = model.generate(**inputs, max_new_tokens=100)
+response = processor.decode(outputs[0], skip_special_tokens=True)
+print(response)
+```
+
+## Training Datasets
+
+This model was trained on a combination of dermatology datasets:
+- DermNet (via kagglehub)
+- Fitzpatrick17k
+- DDI (Diverse Dermatology Images)
+- SCIN (Skin Cancer Image Network)
+- SkinCap
+
+## Limitations
+
+- This is a test model trained on a small dataset (1,000 examples)
+- For production use, consider training on a larger, more diverse dataset
+- Always consult with medical professionals for actual diagnosis
+
+## License
+
+This model inherits the license from the base Qwen2.5-VL-3B-Instruct model.
+EOF
+        
+        echo 'Model card created: \$MERGED_MODEL_DIR/README.md'
+        
+        # Create requirements.txt for the model
+        cat > \$MERGED_MODEL_DIR/requirements.txt << 'EOF'
+torch>=2.0.0
+transformers>=4.37.0
+pillow>=9.0.0
+accelerate>=0.20.0
+EOF
+        
+        echo 'Requirements file created: \$MERGED_MODEL_DIR/requirements.txt'
+        
+        # Display final summary
+        echo ''
+        echo '=== FINAL SUMMARY ==='
+        echo '✅ LoRA training completed'
+        echo '✅ Model weights merged'
+        echo '✅ Model card created'
+        echo '✅ Requirements file created'
+        echo ''
+        echo '📁 Output directories:'
+        echo '  - LoRA weights: ../$OUTPUT_DIR'
+        echo '  - Merged model: \$MERGED_MODEL_DIR'
+        echo ''
+        echo '🚀 Ready for Hugging Face upload!'
+        echo '   Use: huggingface-cli upload <repo-name> \$MERGED_MODEL_DIR'
     "
 
 echo ""
